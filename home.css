@@ -1,0 +1,33 @@
+*{  margin: 0px;
+	padding: 0px;}
+h1{ font: 40px bold tahoma ; width: 75%; padding-top: 20px;margin: 0 12.5%;color: #ffe100; }	
+header, section {display: block;}
+body {width:100%;
+     background: #558ae0}
+#container{max-width: 1000px;
+           		margin: 30px 0;
+           		display: -webkit-box;
+     -webkit-box-orient:vertical;
+       -webkit-box-flex:1;}
+section {border: 1px solid #3d87ff;
+ 			-webkit-box-flex:1;
+ 			margin:30px;padding: 20px;}
+#result1{  color: #ffe100;font:5vh bold tahoma;border: 2px solid white;padding: 10px;} 		
+#result2{  color: #ffe100;font:5vh bold tahoma;border: 2px solid white;padding: 10px;} 		
+label{color: #ffe100;font:3vh bold tahoma;}	
+input[type=date]:focus {
+    background-color: #fcee88;border:2px solid #66cccc;
+}
+input[type=date]{
+ background-color: #3CBC8D;margin-top: 10px;
+    }
+.button{   
+     background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+ padding: 8px 16px;
+  font-size: 10px;
+    margin: 4px 2px;  }   
+.button:active {   background-color: #008CBA;
+    color: white;}     
+.para {color: white;font:5vh bold tahoma;padding-bottom: 20px;padding-top: 20px;}

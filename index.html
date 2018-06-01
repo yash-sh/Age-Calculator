@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	 <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   	 <title>Age Calculator</title>
+   	 <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body><div id="container">
+
+	<header><h1>Age Calculator</h1></header>
+	<section>
+		<div id="form1">
+	  <form><p class="para">Calculate your age: </p>	<label for="bday">Date of Birth : </label><input type="date" id="bday" required>
+		<input class="button"type="button" onclick="calculateAge1()" value="Calculate">
+		<input class="button"type="button" onclick="resetResult1()" value="Reset"><br><br>
+	 	<p id="result1"></p>
+	</form>
+		</div>
+		<div id="form2">
+	  <form><p class="para">Calculate difference between two dates: </p>
+	  	<label for="bday">First Date: &nbsp&nbsp&nbsp&nbsp&nbsp </label><input type="date" id="day1" required><br>
+	 	<label for="bday">Second Date: &nbsp</label><input type="date" id="day2" required>
+		
+
+		<input class="button"type="button" onclick="calculateAge2()" value="Calculate">
+		<input class="button"type="button" onclick="resetResult2()" value="Reset"><br><br>
+	 	<p id="result2"></p>
+	</form>
+		</div>
+
+
+
+</section>
+</div>
+<script type="text/javascript" src="server.js"></script>
+</body>
+</html>
