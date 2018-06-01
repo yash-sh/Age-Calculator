@@ -29,15 +29,17 @@ function calculateAge1(){
 			dm += 12;
 		}
 		if (b<=t){
-		var totalDays = dy * 365.25 + dm * 30.55 + dd;
-		totalDays=Math.floor(totalDays);
-		document.querySelector("#result1").innerHTML = "Your current age is found to be " + dy + " years " + dm + " months and " + dd + "  days and the number of days you lived are " + totalDays + " !";
-	     }else {
+			if ((bm===tm) && (bd==td)){
+				var totalDays = Math.floor(dy * 365.25 + dm * 30.55 + dd);
+				document.querySelector("#result1").innerHTML = "Happy Birthday! Your current age is found to be " + dy + " years " + dm + " months and " + dd + "  days and the number of days you lived are " + totalDays + " ! Bless you a long and happy life..";
+			} else {
+				var totalDays = Math.floor(dy * 365.25 + dm * 30.55 + dd);
+				document.querySelector("#result1").innerHTML = "Your current age is found to be " + dy + " years " + dm + " months and " + dd + "  days and the number of days you lived are " + totalDays + " !";
+			}
+		} else {
 			document.querySelector("#result1").innerHTML = "Future dates are not acceptable!";
-	}}
-	function resetResult1(){
-		document.querySelector("#bday").value = "";
-		document.querySelector("#result1").innerHTML = "";
+		}
+		
 	}
  
  function calculateAge2(){
